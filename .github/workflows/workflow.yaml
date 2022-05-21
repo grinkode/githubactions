@@ -16,7 +16,7 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-    	- uses: actions/checkout@v3
+#    	- uses: actions/checkout@v3
          - run: echo "Repozytorium ${{ github.repository }} repo zostalo sklonowane przez runnera"
          - run: echo "Workflow gotowe. Czas zaczac faze testow"
          - name: Wypisz liste plikow
