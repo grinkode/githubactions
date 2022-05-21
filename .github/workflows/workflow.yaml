@@ -14,11 +14,10 @@ jobs:
 
   dodatkowy_build:
       runs-on: ubuntu-latest
-
       steps:
-#    	- uses: actions/checkout@v3
-         - run: echo "Repozytorium ${{ github.repository }} repo zostalo sklonowane przez runnera"
-         - run: echo "Workflow gotowe. Czas zaczac faze testow"
-#         - name: Wypisz liste plikow
-    	   - run: ls $GITHUB_WORKSPACE
-         - run: echo "Status joba jest ${{ job.status }}."
+        -uses: actions/checkout@v3
+        -run: echo "Repozytorium ${{ github.repository }} repo zostalo sklonowane przez runnera"
+#        -run: echo "Workflow gotowe. Czas zaczac faze testow"
+#        -name: Wypisz liste plikow
+        -run: ls $github.workflow
+        -run: echo "Status joba jest ${{ job.status }}."
