@@ -19,5 +19,5 @@ jobs:
         - run: echo "Repozytorium ${{ github.repository }} repo zostalo sklonowane przez runnera"
         - run: echo "Workflow gotowe. Czas zaczac faze testow"
 #        -name: Wypisz liste plikow
-        - run: ls $github.workflow
+        - run: ls ${{ github.workflow }}
         - run: echo "Status joba jest ${{ job.status }}."
